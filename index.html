@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gallery">
+        <div class="image-container" onclick="openModal(1)">
+            <div class="image-wrapper">
+                <img src="image1.jpg" alt="Description of Image 1">
+                <div class="overlay"></div>
+            </div>
+            <div class="info">
+                <h2>Muscate</h2>
+                <p>Information about Image 1</p>
+            </div>
+        </div>
+        <div class="image-container" onclick="openModal(2)">
+            <div class="image-wrapper">
+                <img src="image2.jpg" alt="Description of Image 2">
+                <div class="overlay"></div>
+            </div>
+            <div class="info">
+                <h2>Trandafiri</h2>
+                <p>Information about Image 2</p>
+            </div>
+        </div>
+        <div class="image-container" onclick="openModal(3)">
+            <div class="image-wrapper">
+                <img src="image3.jpg" alt="Description of Image 3">
+                <div class="overlay"></div>
+            </div>
+            <div class="info">
+                <h2>Stanjenei</h2>
+                <p>Information about Image 3</p>
+            </div>
+        </div>
+        <div class="image-container" onclick="openModal(4)">
+            <div class="image-wrapper">
+                <img src="image4.jpg" alt="Description of Image 4">
+                <div class="overlay"></div>
+            </div>
+            <div class="info">
+                <h2>Bujori</h2>
+                <p>Information about Image 4</p>
+            </div>
+        </div>
+        <div class="image-container" onclick="openModal(5)">
+            <div class="image-wrapper">
+                <img src="image5.jpg" alt="Description of Image 5">
+                <div class="overlay"></div>
+            </div>
+            <div class="info">
+                <h2>Crini</h2>
+                <p>Information about Image 5</p>
+            </div>
+        </div>
+        <div class="image-container" onclick="openModal(6)">
+            <div class="image-wrapper">
+                <img src="image6.jpg" alt="Description of Image 6">
+                <div class="overlay"></div>
+            </div>
+            <div class="info">
+                <h2>Narcise</h2>
+                <p>Information about Image 6</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Section -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Title</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-images">
+                    <img src="image1.jpg" id="modal-image1" alt="Additional Image 1">
+                    <img src="image2.jpg" id="modal-image2" alt="Additional Image 2">
+                    <img src="image3.jpg" id="modal-image3" alt="Additional Image 3">
+                </div>
+                <div class="modal-text">
+                    <p id="modal-text">Detailed information about the selected image.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
